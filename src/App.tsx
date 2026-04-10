@@ -1,8 +1,14 @@
 import { ProfileCard } from './components/ProfileCard';
 import { ShowTemp } from './components/temperature';
 import './App.css';
+import { useEffect } from 'react';
 
 function App() {
+
+  useEffect(() => {
+    console.log('App component has been rendered');
+  }, []);
+  
   return (
     <div className="root">
       <h1>React Övning 2</h1>
